@@ -1,14 +1,14 @@
 from talon import Context, Module, actions, app
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gust harp igloo judge crunch look made near odd pit quench red sun trap urge valve whale plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
 
-default_digits = "zero one two three four five six seven eight nine".split(" ")
+default_digits = "zero one two three four five six seven eight niner".split(" ")
 numbers = [str(i) for i in range(10)]
 default_f_digits = (
-    "one two three four five six seven eight nine ten eleven twelve".split(" ")
+    "one two three four five six seven eight niner ten eleven twelve".split(" ")
 )
 
 mod = Module()
@@ -199,7 +199,7 @@ symbol_key_words = {
     "star": "*",
     "hash": "#",
     "percent": "%",
-    "caret": "^",
+    "exponent": "^",
     "amper": "&",
     "pipe": "|",
     "dubquote": '"',
@@ -236,10 +236,11 @@ simple_keys = [
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
-    #'junk': 'backspace',
     "forward delete": "delete",
+    "junk": "backspace",
     "page up": "pageup",
     "page down": "pagedown",
+    "pad": "space",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
