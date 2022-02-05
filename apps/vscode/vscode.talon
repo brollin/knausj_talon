@@ -226,7 +226,7 @@ select less: user.vscode("editor.action.smartSelect.shrink")
 select (more | this): user.vscode("editor.action.smartSelect.expand")
 
 minimap: user.vscode("editor.action.toggleMinimap")
-maximize: user.vscode("workbench.action.minimizeOtherEditors")
+# maximize: user.vscode("workbench.action.minimizeOtherEditors")
 restore: user.vscode("workbench.action.evenEditorWidths")
 
 #breadcrumb
