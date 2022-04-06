@@ -110,9 +110,9 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "alt": "alt",  # 'alter': 'alt',
+    "control": "ctrl",  # 'troll':   'ctrl',
+    "shift": "shift",  # 'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -137,7 +137,9 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
+    "semi": ";",
     "colon": ":",
+    "dots": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
