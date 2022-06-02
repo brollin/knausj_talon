@@ -22,7 +22,7 @@ git cherry pick skip: "git cherry-pick --skip "
 git clone: "git clone "
 # Leave \n out for confirmation since the operation is destructive
 git clean everything: "git clean -dfx"
-git commit message <user.text>: "git commit -m '{text}'"
+git commit message: "git commit -m '"
 git commit: "git commit\n"
 git commit amend: "git commit --amend\n"
 git commit no verify: "git commit -n"

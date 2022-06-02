@@ -153,7 +153,7 @@ punctuation_words = {
     "ampersand": "&",
     # Currencies
     "dollar sign": "$",
-    "pound sign": "£",
+    # "pound sign": "£",
 }
 symbol_key_words = {
     "dot": ".",
@@ -166,11 +166,12 @@ symbol_key_words = {
     "square": "[",
     "R square": "]",
     "right square": "]",
-    "slash": "/",
+    "lash": "/",
     "backslash": "\\",
     "minus": "-",
     "dash": "-",
     "equals": "=",
+    "question": "?",
     "plus": "+",
     "tilde": "~",
     "bang": "!",
@@ -208,7 +209,7 @@ symbol_key_words = {
     "double quote": '"',
     # Currencies
     "dollar": "$",
-    "pound": "£",
+    # "pound": "£",
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -238,11 +239,13 @@ simple_keys = [
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
-    "forward delete": "delete",
+    "junky": "delete",
     "junk": "backspace",
     "page up": "pageup",
     "page down": "pagedown",
     "pad": "space",
+    "scrape": "escape",
+    "scape": "escape",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
