@@ -2,33 +2,58 @@ find it: edit.find()
 
 next one: edit.find_next()
 
-go word left: edit.word_left()
+tug:
+    edit.left()
 
-go word right: edit.word_right()
+tug <number_small> times:
+    user.left_n(number_small)
 
-go left: edit.left()
+drain:
+    edit.word_left()
 
-go right: edit.right()
+drain <number_small> times:
+    user.words_left(number_small)
 
-go up: edit.up()
+push:
+    edit.right()
 
-go down: edit.down()
+push <number_small> times:
+    user.right_n(number_small)
 
-go line start: edit.line_start()
+step:
+    edit.word_right()
 
-go line end: edit.line_end()
+step <number_small> times:
+    user.words_right(number_small)
 
-go way left:
+north:
+    user.up_n(1)
+
+north <number_small> times:
+    user.up_n(number_small)
+
+south:
+    user.down_n(1)
+
+south <number_small> times:
+    user.down_n(number_small)
+
+head:
     edit.line_start()
-    edit.line_start()
 
-go way right: edit.line_end()
-
-go way down: edit.file_end()
+tail:
+    edit.line_end()
 
 go way up: edit.file_start()
 
-go bottom: edit.file_end()
+go way up:
+    edit.file_start()
+
+go bottom:
+    edit.file_end()
+
+go top:
+    edit.file_start()
 
 go top: edit.file_start()
 
@@ -51,13 +76,17 @@ select down: edit.extend_line_down()
 
 select word: edit.select_word()
 
-select word left: edit.extend_word_left()
+<user.select> lefter:
+    edit.extend_word_left()
 
-select word right: edit.extend_word_right()
+<user.select> writer:
+    edit.extend_word_right()
 
-select way left: edit.extend_line_start()
+take head:
+    edit.extend_line_start()
 
-select way right: edit.extend_line_end()
+take tail:
+    edit.extend_line_end()
 
 select way up: edit.extend_file_start()
 
@@ -71,45 +100,52 @@ indent [more]: edit.indent_more()
 # deleting
 clear line: edit.delete_line()
 
-clear left: key(backspace)
+scratch <number_small> times:
+    user.delete_left_n(number_small)
 
-clear right: key(delete)
+drill <number_small> times:
+    user.delete_right_n(number_small)
 
-clear up:
+<user.delete> up:
     edit.extend_line_up()
     edit.delete()
 
-clear down:
+<user.delete> down:
     edit.extend_line_down()
     edit.delete()
 
-clear word: edit.delete_word()
+<user.delete> word:
+    edit.delete_word()
 
-clear word left:
-    edit.extend_word_left()
-    edit.delete()
+scratcher:
+    user.delete_word_left_n(1)
 
-clear word right:
-    edit.extend_word_right()
-    edit.delete()
+scratcher <number_small> times:
+    user.delete_word_left_n(number_small)
 
-clear way left:
+swallow:
+    user.delete_word_right_n(1)
+
+swallow <number_small> times:
+    user.delete_word_right_n(number_small)
+
+<user.delete> head:
     edit.extend_line_start()
     edit.delete()
 
-clear way right:
+<user.delete> tail:
     edit.extend_line_end()
     edit.delete()
 
-clear way up:
+<user.delete> way up:
     edit.extend_file_start()
     edit.delete()
 
-clear way down:
+<user.delete> way down:
     edit.extend_file_end()
     edit.delete()
 
-clear all:
+<user.delete> all:
     edit.select_all()
     edit.delete()
 
@@ -135,11 +171,11 @@ copy word:
     edit.select_word()
     edit.copy()
 
-copy word left:
+copy lefter:
     edit.extend_word_left()
     edit.copy()
 
-copy word right:
+copy righter:
     edit.extend_word_right()
     edit.copy()
 
