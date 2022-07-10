@@ -5,38 +5,38 @@ next one: edit.find_next()
 tug:
     edit.left()
 
-tug <number_small> times:
-    user.left_n(number_small)
+# tug <number_small> times:
+#     user.left_n(number_small)
 
 drain:
     edit.word_left()
 
-drain <number_small> times:
-    user.words_left(number_small)
+# drain <number_small> times:
+#     user.words_left(number_small)
 
 push:
     edit.right()
 
-push <number_small> times:
-    user.right_n(number_small)
+# push <number_small> times:
+#     user.right_n(number_small)
 
 step:
     edit.word_right()
 
-step <number_small> times:
-    user.words_right(number_small)
+# step <number_small> times:
+#     user.words_right(number_small)
 
 north:
     user.up_n(1)
 
-north <number_small> times:
-    user.up_n(number_small)
+# north <number_small> times:
+#     user.up_n(number_small)
 
 south:
     user.down_n(1)
 
-south <number_small> times:
-    user.down_n(number_small)
+# south <number_small> times:
+#     user.down_n(number_small)
 
 head:
     edit.line_start()
@@ -52,8 +52,8 @@ go way up:
 go bottom:
     edit.file_end()
 
-go top:
-    edit.file_start()
+# go top:
+#     edit.file_start()
 
 go top: edit.file_start()
 

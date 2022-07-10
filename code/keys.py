@@ -177,6 +177,7 @@ symbol_key_words = {
     "bang": "!",
     "down score": "_",
     "underscore": "_",
+    "score": "_",
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
