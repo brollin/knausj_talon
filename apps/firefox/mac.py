@@ -70,3 +70,11 @@ class UserActions:
 
     def tab_final():
         actions.key("cmd-9")
+
+    def tab_duplicate():
+        """Limitation: this will not work if the text in your address bar has been manually edited.
+        Long-term we want a better shortcut from browsers.
+        """
+        actions.browser.focus_address()
+        actions.sleep("180ms")
+        actions.key("alt-enter")

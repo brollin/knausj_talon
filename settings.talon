@@ -16,10 +16,10 @@ settings():
     user.mouse_continuous_scroll_amount = 80
 
     # Stop continuous scroll/gaze scroll with a pop
-    user.mouse_enable_pop_stops_scroll = 1
+    # user.mouse_enable_pop_stops_scroll = 1
 
     # Enable pop click with 'control mouse' mode
-    user.mouse_enable_pop_click = 1
+    # user.mouse_enable_pop_click = 1
 
     # When enabled, the 'Scroll Mouse' GUI will not be shown.
     user.mouse_hide_mouse_gui = 0
@@ -48,7 +48,7 @@ settings():
     # copying surrounding text before inserting. This can be slow and may not
     # work in some applications. You may wish to enable this on a
     # per-application basis.
-    # user.context_sensitive_dictation = 1
+    user.context_sensitive_dictation = 1
 
 # Uncomment this to enable the curse yes/curse no commands (show hide mouse cursor). See issue #688.
 # tag(): user.mouse_cursor_commands_enable

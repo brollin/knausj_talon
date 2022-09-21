@@ -1,6 +1,6 @@
 from talon import Context, Module, actions, app
 
-default_alphabet = "air bat cap drum each fine gust harp ilk judge crunch look made near ode pit quench red sun trap urge valve wax plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gust harp ilk jane crunch look made near ode pit quench red sun trap urge valve wax plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -130,6 +130,7 @@ punctuation_words = {
     "`": "`",
     ",": ",",  # <== these things
     "back tick": "`",
+    "ski": "`",
     "grave": "`",
     "comma": ",",
     # Workaround for issue with conformer b-series; see #946
@@ -157,7 +158,7 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "point": ".",
+    # "point": ".",
     "quote": "'",
     "question": "?",
     "apostrophe": "'",
@@ -176,7 +177,7 @@ symbol_key_words = {
     "tilde": "~",
     "bang": "!",
     "down score": "_",
-    "underscore": "_",
+    "under score": "_",
     "score": "_",
     "paren": "(",
     "L paren": "(",
@@ -207,6 +208,7 @@ symbol_key_words = {
     "amper": "&",
     "pipe": "|",
     "dubquote": '"',
+    "quad": '"',
     "double quote": '"',
     # Currencies
     "dollar": "$",
@@ -234,7 +236,7 @@ simple_keys = [
     "pagedown",
     "pageup",
     "space",
-    "tab",
+    # "tab",
 ]
 
 alternate_keys = {
@@ -247,6 +249,7 @@ alternate_keys = {
     "pad": "space",
     "scrape": "escape",
     "scape": "escape",
+    "jab": "tab",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

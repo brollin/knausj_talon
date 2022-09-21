@@ -2,7 +2,8 @@ URL Template,Name
 https://www.amazon.com/s/?field-keywords=%s,amazon
 https://www.google.com/search?q=%s,google
 https://www.google.com/search?q=%s&source=lnms&tbm=isch,image
-https://maps.google.com/maps?q=%s,map
 https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
 https://www.youtube.com/results?search_query=%s,YouTube
+https://app.getguru.com/search?q=%s,guru
+https://www.google.com/search?q=%s+site%3Ahttps%3A%2F%2Fdeveloper.mozilla.org&ei=Qk4mY426D8PI0PEPrbGG6AI,mozilla
