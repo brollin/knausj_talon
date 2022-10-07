@@ -17,6 +17,13 @@ https://calendar.google.com/calendar/u/1/r,calendar
 https://clever.okta.com/app/UserHome,okta
 https://app.getguru.com/dashboard/recent-viewed,guru
 https://github.com/Clever/components/blob/master/src/less/sizing.less,sizes
-https://github.com/Clever/sd2,schools dashboard
+https://github.com/Clever/sd2,git schools dash
+https://schools.clever.com/,schools dash
+https://clever-dev--sd2.int.clever.com/,schools dash dev
+http://localhost:5013/,schools dash local
 https://github.com/Clever/launchpad,launchpad
-https://github.com/Clever/apps-dashboard,apps dashboard
+https://github.com/Clever/apps-dashboard,apps dash
+https://hall-monitor.int.clever.com/,hall monitor
+https://clever-dev--hall-monitor.int.clever.com/,hall monitor dev
+http://localhost:5012/,hall monitor local
+https://clever.github.io/components/#/component-list/,dewey

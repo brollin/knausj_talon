@@ -34,6 +34,15 @@ class Actions:
         win = ui.active_window()
         screenshot_rect(win.rect, win.app.name)
 
+    def screenshot_hardcoded():
+        """Takes a screenshot of the active window and saves it to the pictures folder"""
+        win = ui.active_window()
+        win_rect = win.rect
+        screenshot_rect(
+            ui.Rect(win_rect.x, win_rect.y + 95, win_rect.width, win_rect.height - 95),
+            win.app.name,
+        )
+
     def screenshot_selection():
         """Triggers an application that is capable of taking a screenshot of a portion of the screen"""
 

@@ -102,7 +102,7 @@ git tag: "git tag "
 # Convenience
 git edit config: "git config --local -e\n"
 
-git clone clipboard:
+git clone clip:
     insert("git clone ")
     edit.paste()
     key(enter)
