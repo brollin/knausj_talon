@@ -44,8 +44,6 @@ head:
 tail:
     edit.line_end()
 
-go way up: edit.file_start()
-
 go way up:
     edit.file_start()
 

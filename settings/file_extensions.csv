@@ -20,6 +20,7 @@ File extension,Name
 .js,dot java script
 .ts,dot TS
 .ts,dot type script
+.tsx,dot TSX
 .csv,dot csv
 .csv,totssv
 .csv,tot csv
@@ -28,3 +29,6 @@ File extension,Name
 .svg,dot civic
 .svg,dot svg
 .gif,dot gift
+.png,dot ping
+.go,dot go
+.html,dot HTML

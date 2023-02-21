@@ -140,7 +140,7 @@ punctuation_words = {
     "semicolon": ";",
     "semi": ";",
     "colon": ":",
-    "dots": ":",
+    "stack": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -158,7 +158,7 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    # "point": ".",
+    "point": ".",
     "quote": "'",
     "question": "?",
     "apostrophe": "'",

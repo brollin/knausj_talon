@@ -1,29 +1,41 @@
 URL,Spoken name
-https://www.amazon.com/,amazon
-https://dropbox.com/,dropbox
 https://www.google.com/,google
 https://maps.google.com/,google maps
-https://scholar.google.com/,google scholar
 https://mail.google.com/,gmail
 https://github.com/,github
-https://gist.github.com/,gist
 https://en.wikipedia.org/,wikipedia
 https://www.youtube.com/,youtube
 https://www.twitch.tv/,twitch
-https://github.com/lichess-org/lila,lila
-https://lichess.org/,lichess
 https://old.reddit.com/,read it
 https://calendar.google.com/calendar/u/1/r,calendar
+
 https://clever.okta.com/app/UserHome,okta
 https://app.getguru.com/dashboard/recent-viewed,guru
 https://github.com/Clever/components/blob/master/src/less/sizing.less,sizes
-https://github.com/Clever/sd2,git schools dash
-https://schools.clever.com/,schools dash
-https://clever-dev--sd2.int.clever.com/,schools dash dev
-http://localhost:5013/,schools dash local
-https://github.com/Clever/launchpad,launchpad
-https://github.com/Clever/apps-dashboard,apps dash
-https://hall-monitor.int.clever.com/,hall monitor
-https://clever-dev--hall-monitor.int.clever.com/,hall monitor dev
-http://localhost:5012/,hall monitor local
 https://clever.github.io/components/#/component-list/,dewey
+https://clever.atlassian.net/jira/software/c/projects/UMOC/boards/234,on call
+https://clever.atlassian.net/jira/software/c/projects/UM/boards/236,jira
+https://app.launchdarkly.com/default/test/features,launch darkly
+
+https://github.com/Clever/apps-dashboard,apps dash git
+
+https://github.com/Clever/idm,idm git
+
+https://github.com/Clever/google-classroom-rostering,gcr
+https://github.com/Clever/google-classroom-rostering,gcr git
+
+https://github.com/Clever/gcr-sync-service,gcr sync service
+https://github.com/Clever/gcr-sync-service,gcr sync service git
+
+https://hall-monitor.int.clever.com/districts/58d06ce8a4933e00018e4fb4,ham brollin
+https://clever-dev--hall-monitor.int.clever.com/districts/58d06ce8a4933e00018e4fb4,ham brollin dev
+
+https://production--hubble--dunlin.int.clever.com,hubble
+https://clever-dev--hubble--skylark.int.clever.com,hubble dev
+
+https://app.datadoghq.com/dashboard/u3q-mgk-wyz/fasttime-dashboard-v2,fast time
+https://threejs-journey.com/lessons,journey
+
+file:///Users/ben.rollin/Downloads/HomeEd_1_20_2023_Rollin_Benjamin.pdf,physical therapy
+https://github.com/david-tejada/rango,rango
+https://rubular.com/,rubular

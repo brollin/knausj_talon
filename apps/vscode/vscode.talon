@@ -62,10 +62,16 @@ file hunt [<user.text>]:
     user.vscode("workbench.action.quickOpen")
     sleep(50ms)
     insert(text or "")
-file hunt (pace | paste):
+file hunt (pace | paste | clip):
     user.vscode("workbench.action.quickOpen")
     sleep(50ms)
     edit.paste()
+file snipe <user.text>:
+    user.vscode("workbench.action.quickOpen")
+    sleep(50ms)
+    insert(text or "")
+    sleep(500ms)
+    key(enter)
 file copy name: user.vscode("fileutils.copyFileName")
 file copy path: user.vscode("copyFilePath")
 file copy local [path]: user.vscode("copyRelativeFilePath")
