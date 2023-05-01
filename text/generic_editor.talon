@@ -86,9 +86,9 @@ take head:
 take tail:
     edit.extend_line_end()
 
-select way up: edit.extend_file_start()
+take way up: edit.extend_file_start()
 
-select way down: edit.extend_file_end()
+take way down: edit.extend_file_end()
 
 # editing
 indent [more]: edit.indent_more()

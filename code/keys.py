@@ -1,6 +1,6 @@
 from talon import Context, Module, actions, app
 
-default_alphabet = "air bat cap drum each fine gust harp ilk jane crunch look made near ode pit quench red sun trap urge valve wax plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gust harp ilk jane crunch look made near ode pit quench red sun trap urge ax wax plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -130,7 +130,7 @@ punctuation_words = {
     "`": "`",
     ",": ",",  # <== these things
     "back tick": "`",
-    "ski": "`",
+    # "ski": "`",
     "grave": "`",
     "comma": ",",
     # Workaround for issue with conformer b-series; see #946
@@ -159,7 +159,8 @@ punctuation_words = {
 symbol_key_words = {
     "dot": ".",
     "point": ".",
-    "quote": "'",
+    "stringer": "'",
+    # "quote": "'",
     "question": "?",
     "apostrophe": "'",
     "L square": "[",
