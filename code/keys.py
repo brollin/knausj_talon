@@ -138,7 +138,7 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
-    "semi": ";",
+    "seam": ";",
     "colon": ":",
     "stack": ":",
     "forward slash": "/",
@@ -159,7 +159,7 @@ punctuation_words = {
 symbol_key_words = {
     "dot": ".",
     "point": ".",
-    "stringer": "'",
+    "ring": "'",
     # "quote": "'",
     "question": "?",
     "apostrophe": "'",
