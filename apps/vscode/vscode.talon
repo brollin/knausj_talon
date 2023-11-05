@@ -62,10 +62,16 @@ file hunt [<user.text>]:
     user.vscode("workbench.action.quickOpen")
     sleep(50ms)
     insert(text or "")
-file hunt (pace | paste):
+file hunt (pace | paste | clip):
     user.vscode("workbench.action.quickOpen")
     sleep(50ms)
     edit.paste()
+file snipe <user.text>:
+    user.vscode("workbench.action.quickOpen")
+    sleep(50ms)
+    insert(text or "")
+    sleep(500ms)
+    key(enter)
 file copy name: user.vscode("fileutils.copyFileName")
 file copy path: user.vscode("copyFilePath")
 file copy local [path]: user.vscode("copyRelativeFilePath")
@@ -90,7 +96,7 @@ file reveal: user.vscode("workbench.files.action.showActiveFileInExplorer")
 save ugly: user.vscode("workbench.action.files.saveWithoutFormatting")
 
 # Language Features
-suggest show: user.vscode("editor.action.triggerSuggest")
+suggest: user.vscode("editor.action.triggerSuggest")
 hint show: user.vscode("editor.action.triggerParameterHints")
 definition show: user.vscode("editor.action.revealDefinition")
 definition peek: user.vscode("editor.action.peekDefinition")
@@ -226,7 +232,7 @@ select less: user.vscode("editor.action.smartSelect.shrink")
 select (more | this): user.vscode("editor.action.smartSelect.expand")
 
 minimap: user.vscode("editor.action.toggleMinimap")
-maximize: user.vscode("workbench.action.minimizeOtherEditors")
+# maximize: user.vscode("workbench.action.minimizeOtherEditors")
 restore: user.vscode("workbench.action.evenEditorWidths")
 
 #breadcrumb

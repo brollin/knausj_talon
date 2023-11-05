@@ -1,14 +1,14 @@
 from talon import Context, Module, actions, app
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gust harp ilk jane crunch look made near ode pit quench red sun trap urge ax wax plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
 
-default_digits = "zero one two three four five six seven eight nine".split(" ")
+default_digits = "zero one two three four five six seven eight niner".split(" ")
 numbers = [str(i) for i in range(10)]
 default_f_digits = (
-    "one two three four five six seven eight nine ten eleven twelve".split(" ")
+    "one two three four five six seven eight niner ten eleven twelve".split(" ")
 )
 
 mod = Module()
@@ -110,9 +110,9 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "alt": "alt",  # 'alter': 'alt',
+    "control": "ctrl",  # 'troll':   'ctrl',
+    "shift": "shift",  # 'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -130,6 +130,7 @@ punctuation_words = {
     "`": "`",
     ",": ",",  # <== these things
     "back tick": "`",
+    # "ski": "`",
     "grave": "`",
     "comma": ",",
     # Workaround for issue with conformer b-series; see #946
@@ -137,7 +138,9 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
+    "seam": ";",
     "colon": ":",
+    "stack": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -151,12 +154,13 @@ punctuation_words = {
     "ampersand": "&",
     # Currencies
     "dollar sign": "$",
-    "pound sign": "£",
+    # "pound sign": "£",
 }
 symbol_key_words = {
     "dot": ".",
     "point": ".",
-    "quote": "'",
+    "ring": "'",
+    # "quote": "'",
     "question": "?",
     "apostrophe": "'",
     "L square": "[",
@@ -164,16 +168,18 @@ symbol_key_words = {
     "square": "[",
     "R square": "]",
     "right square": "]",
-    "slash": "/",
+    "lash": "/",
     "backslash": "\\",
     "minus": "-",
     "dash": "-",
     "equals": "=",
+    "question": "?",
     "plus": "+",
     "tilde": "~",
     "bang": "!",
     "down score": "_",
-    "underscore": "_",
+    "under score": "_",
+    "score": "_",
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
@@ -199,14 +205,15 @@ symbol_key_words = {
     "star": "*",
     "hash": "#",
     "percent": "%",
-    "caret": "^",
+    "exponent": "^",
     "amper": "&",
     "pipe": "|",
     "dubquote": '"',
+    "quad": '"',
     "double quote": '"',
     # Currencies
     "dollar": "$",
-    "pound": "£",
+    # "pound": "£",
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -230,16 +237,20 @@ simple_keys = [
     "pagedown",
     "pageup",
     "space",
-    "tab",
+    # "tab",
 ]
 
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
-    #'junk': 'backspace',
-    "forward delete": "delete",
+    "junky": "delete",
+    "junk": "backspace",
     "page up": "pageup",
     "page down": "pagedown",
+    "pad": "space",
+    "scrape": "escape",
+    "scape": "escape",
+    "jab": "tab",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

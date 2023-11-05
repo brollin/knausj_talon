@@ -79,8 +79,8 @@ class UserActions:
     def code_insert_is_null():
         actions.auto_insert(" === null")
 
-    def code_type_dictionary():
-        actions.user.insert_between("{", "}")
+    # def code_type_dictionary():
+    #     actions.user.insert_between("{", "}")
 
     def code_state_if():
         actions.user.insert_between("if (", ")")
@@ -92,9 +92,9 @@ class UserActions:
         actions.user.insert_between(" else {", "}")
         actions.key("enter")
 
-    def code_block():
-        actions.user.insert_between("{", "}")
-        actions.key("enter")
+    # def code_block():
+    #     actions.user.insert_between("{", "}")
+    #     actions.key("enter")
 
     def code_self():
         actions.auto_insert("this")
