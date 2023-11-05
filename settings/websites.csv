@@ -9,14 +9,19 @@ https://www.twitch.tv/,twitch
 https://old.reddit.com/,read it
 https://calendar.google.com/calendar/u/1/r,calendar
 
+https://talonvoice.com/,talon
+https://app.slack.com/client/T7FPSMV8F/C026KPTJE6T,talon slack
+
 https://clever.okta.com/app/UserHome,okta
 https://app.getguru.com/dashboard/recent-viewed,guru
 https://github.com/Clever/components/blob/master/src/less/sizing.less,sizes
 https://clever.github.io/components/#/component-list/,dewey
+https://production--idm-template-playground--batman.int.clever.com/playground,template playground
 http://go/dew3y,dewey three
 https://clever.atlassian.net/jira/software/c/projects/UMOC/boards/234,on call
 https://clever.atlassian.net/jira/software/c/projects/UM/boards/236,jira
 https://app.launchdarkly.com/default/test/features,launch darkly
+https://docs.google.com/document/d/1B_crhDrGsjd_arOniZhKGoyPSorFrT5aXuPH9QpsPMo/edit#heading=h.9ki8ihsydn5r,retro
 
 https://github.com/Clever/apps-dashboard,apps dash git
 
@@ -48,5 +53,14 @@ https://app.packtracker.io/organizations/719/projects/528?branch=master&days_ago
 https://chakra-ui.com/docs/components,chakra
 https://vercel.com/brollin,vercel
 http://localhost:3000/playground,playground
+http://localhost:3000/controller,controller
+http://localhost:3000/viewer,viewer
+http://localhost:3000/beatMapper,beatMapper
+http://localhost:3000/portal,portal
+http://localhost:3000/pipes,pipes
+https://canopyconjurer.vercel.app/pipes,pipes prod
 
 https://docs.google.com/spreadsheets/d/13gYTFAcL3aL-GBzoGoj51DnZPOzABsIBlUgubPhtoxk/edit#gid=1376621213,burning man
+https://docs.google.com/spreadsheets/d/13gYTFAcL3aL-GBzoGoj51DnZPOzABsIBlUgubPhtoxk/edit#gid=1376621213,secret fire
+https://docs.google.com/spreadsheets/d/1M0wrmkTPPjsLrRFjlV2qV0jqJsRnTHK1_e5IUyQJ05c/edit#gid=1612304841,burning ben
+https://www.amazon.com/gp/video/detail/B00159CURG/ref=atv_dp_season_select_s3,west wing
