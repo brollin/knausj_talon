@@ -4,3 +4,4 @@ __pycache__
 .idea/
 # Locally generated
 .vscode/settings.json
+.DS_Store

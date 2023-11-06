@@ -1,8 +1,8 @@
 tag: terminal
 and tag: user.git
 -
-# Standard commands
-git add patch: "git add . -p\n"
+
+# begin my custom git commands
 git add: "git add "
 git add all: "git add ."
 git add everything: "git add -u\n"
@@ -34,9 +34,8 @@ git diff tool: "git difftool -d\n"
 git diff tool cached: "git difftool --cached -d\n"
 git commit: "git commit "
 git diff (colour|color) words: "git diff --color-words "
-git diff: "git diff\n"
-git diff cached: "git diff --cached\n"
 git diff last: "git diff HEAD^ HEAD\n"
+git edit config: "git config --local -e\n"
 git fetch: "git main "
 git fetch all: "git fetch --all\n"
 git fetch <user.text>: "git fetch {text}"
@@ -93,7 +92,6 @@ git stash that: "git stash"
 git stash apply: "git stash apply"
 git stash list: "git stash list"
 git stash show: "git stash show"
-git status: "git status\n"
 git switch [<user.text>]:
     "git switch {user.formatted_text(text or '', 'DASH_SEPARATED')}"
 git switch master: "git switch master "
@@ -104,11 +102,30 @@ git (switch create | new branch) [<user.text>]:
 git switch orphan: "git switch --orphan "
 git submodule add: "git submodule add "
 git tag: "git tag "
+# end custom commands
+
+git {user.git_command} [<user.git_arguments>]:
+    args = git_arguments or ""
+    "git {git_command}{args} "
+git commit [<user.git_arguments>] message [<user.prose>]:
+    args = git_arguments or ""
+    message = prose or ""
+    user.insert_between("git commit{args} --message '{message}", "'")
+git stash [push] [<user.git_arguments>] message [<user.prose>]:
+    args = git_arguments or ""
+    message = prose or ""
+    user.insert_between("git stash push{args} --message '{message}", "'")
+
+# Optimistic execution for frequently used commands that are harmless (don't
+# change repository or index state).
+git status$: "git status\n"
+git add patch$: "git add --patch\n"
+git show head$: "git show HEAD\n"
+git diff$: "git diff\n"
+git diff (cached | cashed)$: "git diff --cached\n"
 
 # Convenience
-git edit config: "git config --local -e\n"
-
-git clone clip:
+git clone clipboard:
     insert("git clone ")
     edit.paste()
     key(enter)

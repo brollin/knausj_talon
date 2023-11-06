@@ -3,6 +3,7 @@
 ^grab window$: user.screenshot_window()
 ^grab content$: user.screenshot_hardcoded()
 ^grab selection$: user.screenshot_selection()
+^grab selection clip$: user.screenshot_selection_clip()
 ^grab settings$: user.screenshot_settings()
 ^grab screen clip$: user.screenshot_clipboard()
 ^grab screen <number_small> clip$: user.screenshot_clipboard(number_small)
