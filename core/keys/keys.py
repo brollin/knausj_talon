@@ -148,8 +148,8 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
-    "seam": ";",
-    "colon": ":",
+    # "seam": ";",
+    # "colon": ":",
     "stack": ":",
     "forward slash": "/",
     "question mark": "?",
@@ -248,12 +248,12 @@ simple_keys = [
     "insert",
     "pagedown",
     "pageup",
-    "space",
+    # "space",
     # "tab",
 ]
 
 alternate_keys = {
-    "wipe": "backspace",
+    # "wipe": "backspace",
     "delete": "backspace",
     "junky": "delete",
     "junk": "backspace",

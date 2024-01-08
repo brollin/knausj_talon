@@ -1,16 +1,28 @@
 URL,Spoken name
+https://www.amazon.com/,amazon
 https://www.google.com/,google
 https://maps.google.com/,google maps
+https://maps.google.com/,maps
+https://keep.google.com/u/3/#home,google keep
 https://mail.google.com/,gmail
 https://github.com/,github
 https://en.wikipedia.org/,wikipedia
 https://www.youtube.com/,youtube
 https://www.twitch.tv/,twitch
 https://old.reddit.com/,read it
+https://news.ycombinator.com/,hacker news
 https://calendar.google.com/calendar/u/1/r,calendar
+https://letterboxd.com/,letterbox
+https://account.venmo.com/,ven moe
+https://apg.appfolio.com/connect/online_work_orders,app folio
+https://www.doordash.com/home/,door dash
+https://www.instacart.com/store/,instacart
+https://www.audible.com/,audible
+moz-extension://d83c0e73-8f5e-457b-9ac4-5a089f21ef55/dashboard.html#3p-filters.html,you block origin
 
 https://talonvoice.com/,talon
 https://app.slack.com/client/T7FPSMV8F/C026KPTJE6T,talon slack
+https://talon.wiki/,talon wiki
 
 https://clever.okta.com/app/UserHome,okta
 https://app.getguru.com/dashboard/recent-viewed,guru
@@ -63,4 +75,6 @@ https://canopyconjurer.vercel.app/pipes,pipes prod
 https://docs.google.com/spreadsheets/d/13gYTFAcL3aL-GBzoGoj51DnZPOzABsIBlUgubPhtoxk/edit#gid=1376621213,burning man
 https://docs.google.com/spreadsheets/d/13gYTFAcL3aL-GBzoGoj51DnZPOzABsIBlUgubPhtoxk/edit#gid=1376621213,secret fire
 https://docs.google.com/spreadsheets/d/1M0wrmkTPPjsLrRFjlV2qV0jqJsRnTHK1_e5IUyQJ05c/edit#gid=1612304841,burning ben
-https://www.amazon.com/gp/video/detail/B00159CURG/ref=atv_dp_season_select_s3,west wing
+https://www.amazon.com/gp/video/detail/B0015AQ0I0/ref=atv_dp_season_select_s4,west wing
+https://dashboard.twitch.tv/u/brollin_/stream-manager,stream manager
+https://www.twitch.tv/brollin_,stream

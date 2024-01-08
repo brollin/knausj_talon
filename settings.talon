@@ -28,7 +28,7 @@ settings():
     user.mouse_enable_hiss_scroll = 0
 
     # When enabled, the 'Scroll Mouse' GUI will not be shown.
-    user.mouse_hide_mouse_gui = 0
+    user.mouse_hide_mouse_gui = 1
 
     # Hide cursor when mouse_wake is called to enable zoom mouse
     user.mouse_wake_hides_cursor = 0

@@ -88,9 +88,9 @@ class UserActions:
         actions.insert("y")
         actions.key("enter")
 
-    def tab_jump(number: int):
-        if number <= 9:
-            actions.key("cmd-{}".format(number))
+    # unsure why but these are not working...
+    def tab_next():
+        actions.key("cmd-shift-]")
 
-    def tab_final():
-        actions.key("cmd-9")
+    def tab_previous():
+        actions.key("cmd-shift-[")

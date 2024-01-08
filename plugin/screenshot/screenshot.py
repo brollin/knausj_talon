@@ -38,7 +38,7 @@ class Actions:
         """Takes a screenshot of the active window and saves it to the pictures folder"""
         win = ui.active_window()
         win_rect = win.rect
-        screenshot_rect(
+        actions.user.screenshot_rect(
             ui.Rect(win_rect.x, win_rect.y + 95, win_rect.width, win_rect.height - 95),
             win.app.name,
         )

@@ -9,8 +9,6 @@ File extension,Name
 .com,dot com
 .net,dot net
 .org,dot org
-.us,dot us
-.us,dot U S
 .exe,dot exe
 .bin,dot bin
 .bin,dot bend
@@ -19,6 +17,7 @@ File extension,Name
 .js,dot J S
 .js,dot java script
 .ts,dot TS
+.ts,dot tee ess
 .ts,dot type script
 .tsx,dot TSX
 .csv,dot csv
