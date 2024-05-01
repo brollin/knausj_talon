@@ -2,6 +2,7 @@ File extension,Name
 .py,dot pie
 .talon,dot talon
 .md,dot mark down
+.md,dot MD
 .sh,dot shell
 .vim,dot vim
 .c,dot see
@@ -33,3 +34,4 @@ File extension,Name
 .html,dot HTML
 .frag,dot frag
 .less,dot less
+.java,dot java

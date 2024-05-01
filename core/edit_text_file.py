@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from talon import Context, Module, app
+from talon import Context, Module, app, actions
 
 # path to community/knausj root directory
 REPO_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -58,7 +58,9 @@ class WinActions:
 class MacActions:
     def edit_text_file(path):
         # -t means try to open in a text editor.
-        open_with_subprocess(path, ["/usr/bin/open", "-t", path])
+        # open_with_subprocess(path, ["/usr/bin/open", "-t", path])
+
+        actions.user.open_file_in_vscode(path)
 
 
 @linuxctx.action_class("self")

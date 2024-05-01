@@ -28,7 +28,7 @@ go way right: edit.line_end()
 go way up: edit.file_start()
 go way down: edit.file_end()
 
-go top: edit.file_start()
+# go top: edit.file_start()
 go bottom: edit.file_end()
 
 go page up: edit.page_up()
@@ -80,8 +80,8 @@ clear right: user.delete_right()
 scratcher:
     user.delete_word_left_n(1)
 
-scratcher <number_small> times:
-    user.delete_word_left_n(number_small)
+# scratcher <number_small> times:
+#     user.delete_word_left_n(number_small)
 
 swallow:
     user.delete_word_right_n(1)

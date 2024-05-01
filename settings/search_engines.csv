@@ -11,3 +11,8 @@ https://www.google.com/search?q=%s+site%3Ahttps%3A%2F%2Fdeveloper.mozilla.org&ei
 https://hall-monitor.int.clever.com/districts/%s,ham
 https://app.launchdarkly.com/default/test/features?q=%s,launch darkly
 https://www.google.com/search?q=site%3Areddit.com+%s,reddit
+https://www.google.com/search?q=slay+the+spire+%s,spire
+https://github.com/brollin?tab=repositories&q=%s&type=&language=&sort=,GitHub
+https://letterboxd.com/search/%s/?adult,letterbox
+https://www.rottentomatoes.com/search?search=%s,rotten
+https://www.imdb.com/find/?q=%s&ref_=nv_sr_sm,imdb

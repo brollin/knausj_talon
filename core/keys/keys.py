@@ -147,9 +147,7 @@ punctuation_words = {
     "coma": ",",
     "period": ".",
     "full stop": ".",
-    "semicolon": ";",
-    # "seam": ";",
-    # "colon": ":",
+    "mike": ";",
     "stack": ":",
     "forward slash": "/",
     "question mark": "?",
@@ -173,7 +171,7 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "point": ".",
+    # "point": ".",
     "ring": "'",
     # "quote": "'",
     "question": "?",
@@ -262,7 +260,7 @@ alternate_keys = {
     "pad": "space",
     "scrape": "escape",
     "scape": "escape",
-    "jab": "tab",
+    "boat": "tab",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
