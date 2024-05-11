@@ -19,7 +19,7 @@ step: edit.word_right()
 tug: edit.left()
 push: edit.right()
 north: edit.up()
-south: edit.down()
+sout: edit.down()
 
 go line start | head: edit.line_start()
 go line end | tail: edit.line_end()
