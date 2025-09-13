@@ -1,5 +1,7 @@
 new line: "\n"
 double dash: "--"
+(bracket | left bracket): "{"
+(rbrack | are bracket | right bracket): "}"
 triple quote: "'''"
 triple grave | triple back tick | gravy: "```"
 (dot dot | dotdot): ".."

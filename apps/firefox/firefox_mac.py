@@ -31,3 +31,27 @@ class BrowserActions:
 
     def show_extensions():
         actions.key("cmd-shift-a")
+
+    def show_history():
+        actions.key("cmd-y")
+
+    def toggle_dev_tools():
+        actions.key("cmd-alt-i")
+
+
+@ctx.action_class("user")
+class UserActions:
+    def tab_jump(number: int):
+        if number < 9:
+            actions.key(f"cmd-{number}")
+
+    def tab_final():
+        actions.key("cmd-9")
+
+    def tab_duplicate():
+        """Limitation: this will not work if the text in your address bar has been manually edited.
+        Long-term we want a better shortcut from browsers.
+        """
+        actions.browser.focus_address()
+        actions.sleep("180ms")
+        actions.key("alt-enter")

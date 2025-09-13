@@ -1,4 +1,5 @@
 mode: dictation
+experiment: anchor-file
 -
 ^press <user.modifiers>$: key(modifiers)
 ^press <user.keys>$: key(keys)
@@ -14,12 +15,12 @@ cap: user.dictation_format_cap()
 ^(no space | no-space) that$: user.dictation_reformat_no_space()
 
 # Navigation
-go up <number_small> (line | lines):
-    edit.up()
-    repeat(number_small - 1)
-go down <number_small> (line | lines):
-    edit.down()
-    repeat(number_small - 1)
+# go up <number_small> (line | lines):
+#     edit.up()
+#     repeat(number_small - 1)
+# go down <number_small> (line | lines):
+#     edit.down()
+#     repeat(number_small - 1)
 go left <number_small> (word | words):
     edit.word_left()
     repeat(number_small - 1)

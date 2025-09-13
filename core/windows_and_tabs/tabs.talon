@@ -1,7 +1,7 @@
 tag: user.tabs
 -
-tab (open | new): app.tab_open()
-tab (last | previous): app.tab_previous()
+[go] tab (open | new): app.tab_open()
+[go] tab (last | previous): app.tab_previous()
 tab next: app.tab_next()
 tab close: user.tab_close_wrapper()
 tab (reopen | restore): app.tab_reopen()

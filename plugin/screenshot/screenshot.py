@@ -36,6 +36,15 @@ class Actions:
         win = ui.active_window()
         actions.user.screenshot_rect(win.rect, title=win.app.name)
 
+    def screenshot_hardcoded():
+        """Takes a screenshot of the active window and saves it to the pictures folder"""
+        win = ui.active_window()
+        win_rect = win.rect
+        actions.user.screenshot_rect(
+            ui.Rect(win_rect.x, win_rect.y + 60, win_rect.width, win_rect.height - 60),
+            win.app.name,
+        )
+
     def screenshot_selection():
         """Triggers an application that is capable of taking a screenshot of a portion of the screen"""
 
@@ -62,6 +71,11 @@ class Actions:
         win = ui.active_window()
         clipboard_rect(win.rect)
 
+    def screenshot_hardcoded_clipboard():
+        """Takes a screenshot of a hardcoded location"""
+        win = ui.active_window().rect
+        clipboard_rect(ui.Rect(win.x, win.y + 60, win.width, win.height))
+
     def screenshot_rect(
         rect: ui.Rect, title: str = "", screen_num: Optional[int] = None
     ):
@@ -74,8 +88,8 @@ class Actions:
 
 
 def clipboard_rect(rect: ui.Rect):
-    flash_rect(rect)
     img = screen.capture_rect(rect)
+    flash_rect(rect)
     clip.set_image(img)
 
 
