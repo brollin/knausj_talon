@@ -1,6 +1,6 @@
 settings():
     # Adjust the scale of the imgui
-    imgui.scale = 1.3
+    imgui.scale = 1.4
 
     # Uncomment to set the speech timeout. This is the amount of time after you stop
     # speaking until Talon starts processing the spoken audio. Default is 0.3s.
@@ -59,7 +59,7 @@ settings():
     user.mouse_wheel_down_amount = 120
 
     # Set the amount to scroll left/right
-    user.mouse_wheel_horizontal_amount = 40
+    user.mouse_wheel_horizontal_amount = 120
 
     # If `true`, start mouse grid numbering on the bottom left (vs. top left)
     user.grids_put_one_bottom_left = true

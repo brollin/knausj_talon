@@ -56,9 +56,9 @@ currency_symbols = [
 symbols = [
     Symbol("`", ["back tick"], ["grave"]),
     Symbol(",", ["comma", "coma"]),
-    Symbol(".", ["period", "full stop"], ["dot", "point"]),
-    Symbol(";", ["semicolon"]),
-    Symbol(":", ["colon"]),
+    Symbol(".", ["period", "full stop"], ["dot"]),
+    Symbol(";", ["semicolon", "mike"]),
+    Symbol(":", ["colon", "stack"]),
     Symbol("?", ["question mark"], ["question"]),
     Symbol("!", ["exclamation mark", "exclamation point"], ["bang"]),
     Symbol("*", ["asterisk"], ["star"]),
@@ -75,7 +75,7 @@ symbols = [
     Symbol(")", ["R paren", "right paren"], None),
     Symbol("[", None,["brack", "L brack", "bracket", "L bracket", "left bracket", "square", "L square", "left square",],),
     Symbol("]", None, ["R brack", "R bracket", "right bracket", "R square", "right square"]),
-    Symbol("/", ["forward slash"], ["slash"]),
+    Symbol("/", ["forward slash"], ["slash", "lash"]),
     Symbol("\\", None, ["backslash"]),
     Symbol("{", None, ["brace", "L brace", "left brace", "curly bracket", "left curly bracket"],),
     Symbol("}", None, ["R brace", "right brace","R curly bracket", "right curly bracket"]),
@@ -83,7 +83,7 @@ symbols = [
     Symbol(">", None, ["rangle", "R angle", "right angle", "greater than"]),
     Symbol("^", None, ["caret"]),
     Symbol("|", None, ["pipe"]),
-    Symbol("'", None, ["quote", "apostrophe"]),
+    Symbol("'", None, ["ring", "apostrophe"]),
     Symbol('"', None, ["dub quote", "double quote"]),
 ]
 
