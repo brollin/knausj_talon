@@ -55,8 +55,8 @@ settings():
     # If `true`, hide the cursor when enabling zoom mouse
     user.mouse_wake_hides_cursor = false
 
-    # Set the amount to scroll up/down
-    user.mouse_wheel_down_amount = 120
+    # Set the amount to scroll up/down (negative flips direction)
+    user.mouse_wheel_down_amount = -120
 
     # Set the amount to scroll left/right
     user.mouse_wheel_horizontal_amount = 120
