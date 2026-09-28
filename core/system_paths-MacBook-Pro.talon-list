@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: MacBook-Pro
+-
+user: /Users/ben.rollin
+desktop: /Users/ben.rollin/Desktop
+desk: /Users/ben.rollin/Desktop
+documents: /Users/ben.rollin/Documents
+docks: /Users/ben.rollin/Documents
+downloads: /Users/ben.rollin/Downloads
+music: /Users/ben.rollin/Music
+pictures: /Users/ben.rollin/Pictures
+videos: /Users/ben.rollin/Videos
+talon home: /Users/ben.rollin/.talon
+talon recordings: /Users/ben.rollin/.talon/recordings
+talon user: /Users/ben.rollin/.talon/user
+home: /Users/ben.rollin

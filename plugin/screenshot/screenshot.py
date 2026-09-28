@@ -74,7 +74,7 @@ class Actions:
     def screenshot_hardcoded_clipboard():
         """Takes a screenshot of a hardcoded location"""
         win = ui.active_window().rect
-        clipboard_rect(ui.Rect(win.x, win.y + 60, win.width, win.height))
+        clipboard_rect(ui.Rect(win.x, win.y + 120, win.width, win.height))
 
     def screenshot_rect(
         rect: ui.Rect, title: str = "", screen_num: Optional[int] = None
