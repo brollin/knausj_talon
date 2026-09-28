@@ -1,6 +1,6 @@
 import skia
 from talon import Module, actions, app, cron, registry, scope, settings, ui
-from talon.canvas import Canvas
+from talon.canvas import Canvas, MouseEvent
 from talon.screen import Screen
 from skia import Canvas as SkiaCanvas, ImageFilter, Point2d, Rect
 
@@ -160,15 +160,23 @@ def move_indicator():
     canvas.move(x, y)
 
 
+def on_mouse(e: MouseEvent):
+    if e.event == "mouseup" and e.button == 0:
+        actions.user.microphone_select(2)
+
+
 def show_indicator():
     global canvas
     canvas = Canvas.from_rect(Rect(0, 0, 0, 0))
+    canvas.blocks_mouse = True
     canvas.register("draw", on_draw)
+    canvas.register("mouse", on_mouse)
 
 
 def hide_indicator():
     global canvas
     canvas.unregister("draw", on_draw)
+    canvas.unregister("mouse", on_mouse)
     canvas.close()
     canvas = None
 
