@@ -1,9 +1,8 @@
-from talon import Module, actions, app, cron, registry, scope, settings, skia, ui
+import skia
+from talon import Module, actions, app, cron, registry, scope, settings, ui
 from talon.canvas import Canvas
 from talon.screen import Screen
-from talon.skia.canvas import Canvas as SkiaCanvas
-from talon.skia.imagefilter import ImageFilter
-from talon.ui import Point2d, Rect
+from skia import Canvas as SkiaCanvas, ImageFilter, Point2d, Rect
 
 canvas: Canvas = None
 current_mode = ""
@@ -221,7 +220,7 @@ def poll_microphone():
 def on_ready():
     registry.register("update_contexts", on_update_contexts)
     registry.register("update_settings", on_update_settings)
-    ui.register("screen_change", lambda _: update_indicator)
+    ui.register("screen_change", lambda _: update_indicator())
     cron.interval("500ms", poll_microphone)
 
 

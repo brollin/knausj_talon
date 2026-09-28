@@ -1,7 +1,5 @@
 from talon import Module, actions, app, imgui
-from talon.lib import cubeb
 
-ctx = cubeb.Context()
 mod = Module()
 
 
@@ -14,18 +12,14 @@ def update_microphone_list():
     global microphone_device_list
     microphone_device_list = ["None", "System Default"]
 
-    # On Windows, it's presently necessary to check the state, or
-    # we will get any and every microphone that was ever connected.
     devices = [
-        dev.name for dev in ctx.inputs() if dev.state == cubeb.DeviceState.ENABLED
+        name
+        for name in actions.sound.microphones()
+        if name not in ("None", "System Default")
     ]
 
     devices.sort()
     microphone_device_list += devices
-
-
-def devices_changed(device_type):
-    update_microphone_list()
 
 
 @imgui.open()
@@ -64,7 +58,6 @@ class Actions:
 
 
 def on_ready():
-    ctx.register("devices_changed", devices_changed)
     update_microphone_list()
 
 
